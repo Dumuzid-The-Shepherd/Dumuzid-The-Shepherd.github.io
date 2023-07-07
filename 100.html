@@ -6,22 +6,67 @@
     <style>
         @import url('https://fonts.googleapis.com/css?family=Computer+Modern');
 
+        body {
+            background-color: #CBC3E3; /* Set the desired background color */
+        }
+
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+            background-image: url("clouds.png");
+            background-size: auto 100%; /* Set the height to 100% and let the width adjust automatically */
+            background-position: left; /* Start the background position from the left side */
+            background-repeat: repeat-x; /* Repeat the image horizontally */
+            animation: scroll 40s linear infinite; /* Scroll animation */
+        }
+
+        @keyframes scroll {
+            0% {
+                background-position: 0 0; /* Start from the left side */
+            }
+            100% {
+                background-position: 100% 0; /* Scroll to the right side */
+            }
+        }
+
+        .gif-button-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .gif-button {
+            width: 100px;
+            height: 75px;
+            margin-top: 80px;
+            background-image: url("enter.gif");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-decoration: none;
+        }
+
         .black-box {
             width: 200px;
-            height: 200px; /* Updated height for the first box */
+            height: 200px;
             background-color: black;
             color: white;
             text-align: center;
             margin: 0 auto;
-            margin-top: 3vh; /* Adjust this value to position the boxes vertically */
-            border: 3px double white; /* Border properties */
-            font-family: 'Computer Modern', serif; /* Apply Computer Modern font */
-
+            margin-top: 3vh;
+            border: 3px double white;
+            font-family: 'Computer Modern', serif;
         }
+
         .black-box img {
             max-width: 100%;
             max-height: 100%;
         }
+
         .second-black-box {
             width: 520px;
             height: 240px;
@@ -32,12 +77,14 @@
             margin-top: 20px;
             border: 3px double white;
             font-family: 'Computer Modern', serif;
-            padding: 20px; /* Add padding to create space around the text */
-            box-sizing: border-box; /* Include padding within the box's total width and height */
+            padding: 20px;
+            box-sizing: border-box;
         }
     </style>
 </head>
 <body>
+<div class="background-image"></div>
+
 <div class="black-box">
     <img src="hank.jpg" alt="HANK">
 </div>
@@ -47,6 +94,12 @@
     I'm at the shores of a beach, looking out, the waves waltz forward. Nobody can stop them. Beyond me the sky flickers, when it's white, I feel nothing. When its purple, fireworks cloud the horizon and stand static until I turn my head the other direction, I feel like I'm at the end of a very long book, I'm at the final act of something that I've only recently realized is ending. I didn't know before. Nobody told me. All the cues are there, nothings stopping the march of time now.
     <br>
     <br>
-    I wonder how this final act is going to play out. </div>
+    I wonder how this final act is going to play out.
+</div>
+
+<div class="gif-button-wrapper">
+    <a href="path/to/another-page.html" class="gif-button"></a>
+</div>
+
 </body>
 </html>
