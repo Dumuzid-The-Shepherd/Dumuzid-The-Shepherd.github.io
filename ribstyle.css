@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "TI";
+    src: url('https://ribose.neocities.org/fonts/Px437_Ti_Pro.ttf') format('truetype');
+}
+
+body {
+    color: black;
+    font-family: "TI", "Courier New", Courier, monospace;
+}
+
+ul {
+    padding: 0px 10px 0px 20px;
+    margin: 0px;
+    text-align: left;
+}
+
+.border {
+    background-color: white;
+    border-style: double;
+    border-width: 5px;
+    padding: 5px;
+}
