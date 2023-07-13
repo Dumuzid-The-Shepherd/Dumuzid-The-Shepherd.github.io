@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medium Blog Post</title>
+  <style>
+    body {
+      font-family: "Times New Roman", sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #eee;
+      overflow-x: hidden;
+    }
+    header {
+      background-image: url('space.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .logo-container {
+      background-color: #000;
+      border: 2px solid #fff;
+      border-style: double;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .logo {
+      width: 190px;
+      height: 50px;
+    }
+    .author-container {
+      background-color: #000;
+      border: 2px solid #fff;
+      border-style: double;
+      padding: 20px;
+    }
+    .author {
+      color: #fff;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .image {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .body {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .quote {
+      margin: 20px 0;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-left: 4px solid #ddd;
+    }
+    .caption {
+      font-style: italic;
+      color: #888;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 10px;
+      background-color: #f1f1f1;
+      font-size: 14px;
+      color: #888;
+    }
+    .background-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="background-container">
+    <div class="background"></div>
+  </div>
+  <div class="container">
+    <div class="logo-container">
+      <img src="medium.png" alt="Logo" class="logo">
+    </div>
+    <div class="author-container">
+      <h1>Journal Entry | May 15</h1>
+      <p class="author">By TrulyAsia</p>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="image">
+    <img src="street.jpg" alt="Article Image">
+  </div>
+  <div class="body">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices quam ut tincidunt consectetur. Pellentesque sed nisl nec magna sagittis lobortis.</p>
+    <p>Curabitur et turpis vitae felis viverra pellentesque. Phasellus tincidunt aliquam urna vel tincidunt. Aenean scelerisque bibendum semper. Fusce ullamcorper placerat tellus, vitae viverra ex varius ac.</p>
+    <blockquote class="quote">
+      <p>God, but life is loneliness, despite all the opiates, despite the shrill tinsel gaiety of "parties" with no purpose, despite the false grinning faces we all wear. And when at last you find someone to whom you feel you can pour out your soul, you stop in shock at the words you utter - they are so rusty, so ugly, so meaningless and feeble from being kept in the small cramped dark inside you so long. Yes, there is joy, fulfillment and companionship - but the loneliness of the soul in its appalling self-consciousness is horrible and overpowering.</p>
+      <p class="caption">- Sylvia Plath</p>
+    </blockquote>
+    <p>Donec malesuada ultrices felis, a facilisis tortor. Suspendisse dignissim ultricies urna. Integer laoreet euismod metus, non ullamcorper eros eleifend id.</p>
+  </div>
+</div>
+<footer class="footer">
+  <p>&copy; 2023 Ethan Saw. All rights reserved.</p>
+</footer>
+</body>
+</html>
