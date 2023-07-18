@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Viewer</title>
+  <style>
+    body {
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #imageContainer {
+      text-align: center;
+    }
+
+    img {
+      max-width: 50%;
+      max-height: 50%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    #nextButton {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<div id="imageContainer">
+  <img id="image" src="grad11.JPG" alt="Photo 1">
+  <button id="nextButton">Next Image</button>
+</div>
+
+<script>
+  const images = [
+    "grad11.JPG", "animecon.JPG", "ethanrn.PNG", "thesea.jpg", "chilling.jpeg",
+    "cinema.jpeg", "camping.jpeg", "taller.jpeg", "smile.jpeg", "grad13.jpeg",
+    "zoom.jpeg", "hair.jpeg", "christmas.jpeg"
+  ];
+
+  let currentIndex = 0;
+
+  const imageElement = document.getElementById("image");
+  const nextButton = document.getElementById("nextButton");
+
+  nextButton.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    imageElement.src = images[currentIndex];
+  });
+</script>
+</body>
+</html>
